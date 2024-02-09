@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
-          docker login --username nothingbutCode4now --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/nothingbutCode4now/arithmetic:latest --file Dockerfile .  
-          docker push ghcr.io/nothingbutCode4now/arithmetic:latest 
+          docker login --username sbukkap --password ${{secrets.ACCESS_TOKEN}} ghcr.io
+          docker build -t ghcr.io/sbukkap/arithmetic:latest --file Dockerfile .  
+          docker push ghcr.io/sbukkap/arithmetic:latest 
